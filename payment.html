@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="form">
+    <form action="#">
+    <input type="text" placeholder="Your first name" ><br>
+    <input type="text" placeholder="Your last name" ><br>
+    <input id="num" type="text" placeholder="Your bkash number" ><br>
+    <p id="p"></p>
+    <button type="submit" onclick="sub()">submit</button>
+  </form>
+  </div>
+
+  <script>
+    let a = document.getElementById("num");
+    let b = document.getElementById("p");
+    function sub(){
+      if(a.value.length <= 10){
+        b.innerHTML = "Number must be includes 11 characters";
+      }
+      else if(a.value.length == 11 && a.value.charAt(0) != "0"){
+        b.innerHTML = "Number must be start with 0";
+      }
+      else if(a.value.length > 11){
+        b.innerHTML = "Number must includes 11 characters";
+      }
+      else if(a.value.length == 11 && a.value.charAt(0) == "0"){
+        alert("Your number added successfully");
+        window.location.replace("index2.html");
+      }
+    }
+
+  </script>
+</body>
+</html>

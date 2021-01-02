@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d5e2ff;
+  overflow: scroll;
+}
+
+header {
+  text-align: center;
+}
+
+header .logo {
+  height: 50px;
+  background: #3b5998;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: -42px;
+  z-index: 9999;
+}
+
+form {
+  text-align: center;
+  margin-top: 100px;
+}
+
+form input[type="email"] {
+  width: 250px;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #c8c2c2;
+}
+
+form input[type="email"]::-webkit-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="email"]:-ms-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="email"]::-ms-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="email"]::placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="password"] {
+  width: 250px;
+  padding: 15px;
+  margin-top: -2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #c8c2c2;
+}
+
+form input[type="password"]::-webkit-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="password"]:-ms-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="password"]::-ms-input-placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form input[type="password"]::placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+form button {
+  background: #4267b2;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  width: 280px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+form p {
+  color: grey;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+form p a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer {
+  background: #fff;
+  height: 100px;
+  margin-top: 40%;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 70px;
+  color: #8b8989;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer p span:nth-child(1) {
+  color: #5e5e6d;
+}
+
+footer p span:nth-child(2) {
+  color: #54546b;
+}
+
+footer h5 {
+  margin-top: 57px;
+  color: #7a7373;
+  font-weight: normal;
+}
+
+.alert {
+  background-color: #fff6c6;
+  color: #70611f;
+  font-weight: bold;
+  font-size: small;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.alert hr {
+  background: #9b8628;
+}
+
+.head {
+  background-image: url(./newyear.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.gift img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: -50%;
+  margin-left: 40%;
+}
+
+.des {
+  text-align: center;
+}
+
+.des h5 {
+  position: absolute;
+  color: #fff;
+  margin-top: -30%;
+}
+
+.des h5:nth-child(2) {
+  margin-top: -15%;
+}
+
+.off {
+  text-align: center;
+}
+
+.off h1 {
+  color: #040949;
+  font-size: 20px;
+}
+
+.off h1 span {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

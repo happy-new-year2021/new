@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-image: url(./cc1.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 250px;
+  margin-left: 8%;
+  margin-top: 50%;
+}
+
+.form input {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  background-color: #0766b3;
+  color: #000000;
+  font-weight: bold;
+}
+
+.form input::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+.form input:-ms-input-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+.form input::-ms-input-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+.form input::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+.form button {
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #b34607;
+  margin-top: 30px;
+}
+
+.form #p {
+  font-size: 12px;
+  margin-left: 13px;
+  position: absolute;
+  color: red;
+  float: left;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-top: -10px;
+  font-weight: bold;
+  background-color: black;
+}
+/*# sourceMappingURL=payment.css.map */
